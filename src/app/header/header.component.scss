@@ -1,0 +1,37 @@
+.header-cls {
+    .ui-list-cls {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        .li-cls {
+            float: left;
+            a {
+                text-decoration: none;
+                display: block;
+                padding: 14px 16px;
+                color: #fff;
+                cursor: pointer
+            }
+        }
+    }
+    .li-cls a:hover {
+        background-color: #111
+    }
+    .right-text {
+        float: right;
+    }
+    .active a {
+        background-color: rgb(238, 97, 46);
+    }
+    .app-color {
+        color: rgb(238, 97, 46);
+    }
+    .text-center {
+        text-align: center;
+    }
+    .padding-top-20 {
+        padding-top: 20%;
+    }
+}
