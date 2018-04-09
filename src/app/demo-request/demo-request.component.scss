@@ -1,16 +1,37 @@
 $app-main-color:#ec3f79;
 $white-color:#fff;
-;
 .demo-requset-view {
-    background-position: -18% 44%;
     background-image: url(assets/images/demo2.jpg); // background-attachment: fixed;
+    background-position: 74%;
+    background-repeat: no-repeat;
+    .form-control {
+        color: $white-color;
+    }
     .demo-container {
         background-color: rgba(0, 0, 0, 0.45) !important;
-        padding-top: 10%;
-        height: 400px;
+        padding-top: 3%;
+        min-height: 400px;
         width: 100%;
+        .line-height2 {
+            line-height: 2;
+        }
         .demo-text {
             color: $white-color;
+            padding-top: 6%;
+            padding-right: 4%;
+        }
+        .md-form label {
+            color: #ccc;
+        }
+        .btn-sec {
+            margin-left: 8%;
+            .submit-btn {
+                background: linear-gradient(40deg, #ffd86f, #fc6262);
+            }
+        }
+        .right-sec {
+            background-color: #ffffff17;
+            padding: 10px;
         }
     }
 }

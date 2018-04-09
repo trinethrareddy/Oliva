@@ -1,10 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
+$app-color:#ec3f79;
 body {
     margin: 0px;
     font-family: sans-serif;
 }
 
-.marginn-top-30 {
+.margin-top-30 {
     margin-top: 30px;
+}
+
+.hover-app-color:hover,
+.fa-icons,
+.app-color {
+    color: $app-color;
+}
+
+.hover-courser {
+    cursor: pointer;
 }

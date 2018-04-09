@@ -1,0 +1,16 @@
+.page-title-bg-sec {
+    background-image: url(assets/images/course.jpg);
+    width: 100%;
+    background-size: 100%;
+    .bg-text {
+        background-color: rgba(0, 0, 0, 0.49) !important;
+        width: 100%;
+        height: 261px;
+        h3 {
+            margin: auto;
+            text-align: center;
+            padding-top: 10%;
+            color: #fff;
+        }
+    }
+}

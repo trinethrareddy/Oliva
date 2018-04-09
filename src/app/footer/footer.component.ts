@@ -3,10 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+  firstSection: any;
+  companyLinks: any;
+  trendingCourses: any;
+  contactInfo: any;
   constructor() { }
 
   ngOnInit() {

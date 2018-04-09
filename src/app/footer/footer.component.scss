@@ -1,0 +1,12 @@
+$app-color:#ec3f79;
+.page-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 2;
+    .title {
+        color: $app-color;
+    }
+}
+
+.fa-icons {
+    color: $app-color;
+}

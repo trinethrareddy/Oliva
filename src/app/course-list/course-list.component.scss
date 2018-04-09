@@ -1,0 +1,41 @@
+$app-color:#ec3f79;
+.course-list-view {
+    padding-top: 75px;
+    background: #cceef7;
+}
+
+.title-text {
+    font-size: 1.5rem;
+    color: $app-color;
+    margin-bottom: 30px;
+}
+
+.course-title {
+    margin-bottom: 20%;
+}
+
+.course-desc {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 98px;
+    /* margin: 0 auto; */
+    /* font-size: 14px; */
+    line-height: 1.5;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.app-text {
+    &:hover {
+        color: $app-color;
+    }
+}
+
+.course-bg {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
