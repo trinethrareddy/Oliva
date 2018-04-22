@@ -5,6 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { CoursesComponent } from './courses/courses.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -13,6 +15,7 @@ const routes: Routes = [
     { path: 'courses', component: CoursesComponent },
     { path: 'contact', component: ContactusComponent },
     { path: 'registration', component: RegistrationComponent },
+    { path: 'coursesDetails/:name', component: CourseDetailsComponent },
     // {
     //     path: 'app', component: HomeComponent,
     //     children: [
@@ -26,16 +29,15 @@ const routes: Routes = [
     // },
 
     // { path: 'setpassword', component: ResetpasswordComponent },
-    // { path: 'notFound', component: NotfoundComponent },
+    { path: 'notFound', component: NotFoundComponent },
     // { path: 'notAuthorized', component: NotAuthorizedComponent },
 
-    // { path: '**', redirectTo: '/notFound' }
+    { path: '**', redirectTo: '/notFound' }
 
 ];
 
 @NgModule({
-    // , { useHash: true }
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, { useHash: true })],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

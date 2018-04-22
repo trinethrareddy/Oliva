@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app.routing';
 import { CoursesComponent } from './courses/courses.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { RegistrationComponent } from './registration/registration.component';
     DemoRequestComponent,
     CoursesComponent,
     ContactusComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

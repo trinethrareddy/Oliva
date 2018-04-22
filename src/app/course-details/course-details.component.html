@@ -1,134 +1,76 @@
-<!--Projects section v.2-->
-<section class="section text-center pb-3">
-
-  <!--Section heading-->
-  <h2 class="section-heading h1 pt-4">
-    <strong>Our best projects</strong>
-  </h2>
-  <!--Section description-->
-  <p class="section-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-  <!--Grid row-->
-  <div class="row d-flex justify-content-center">
-
-    <!--Grid column-->
-    <div class="col-lg-6 col-xl-5 mb-3">
-
-      <!--Featured image-->
-      <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
-
-        <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" alt="Sample project image">
-
-        <a>
-          <div class="mask"></div>
-        </a>
-      </div>
-
-      <!--Excerpt-->
-      <div class="card-body mt-1">
-        <a href="" class="green-text">
-          <h5>
-            <i class="fa fa-line-chart"></i> Marketing</h5>
-        </a>
-        <h4>This is title of the news</h4>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-        <a class="btn btn-success btn-rounded waves-light" mdbRippleRadius> View more</a>
-      </div>
-
+<div class="container-fuild">
+  <div class="page-title-bg-sec">
+    <div class="bg-text">
+      <h3>{{courseName || 'Not Found'}}</h3>
     </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-6 col-xl-5 mb-3">
-
-      <!--Featured image-->
-      <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
-
-        <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(45).jpg" alt="Sample project image">
-
-        <a>
-          <div class="mask"></div>
-        </a>
-      </div>
-
-      <!--Excerpt-->
-      <div class="card-body mt-1">
-        <a href="" class="blue-text">
-          <h5>
-            <i class="fa fa-eye"></i> Entertainment</h5>
-        </a>
-        <h4>This is title of the news</h4>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.</p>
-        <a class="btn btn-success btn-rounded waves-light" mdbRippleRadius> View more</a>
-      </div>
-
-    </div>
-    <!--Grid column-->
-
   </div>
-  <!--Grid row-->
-
-  <!--Grid row-->
-  <div class="row d-flex justify-content-center">
-
-    <!--Grid column-->
-    <div class="col-lg-6 col-xl-5 mb-3">
-
-      <!--Featured image-->
-      <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
-
-        <img src="https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20(31).jpg" alt="Sample project image">
-
-        <a>
-          <div class="mask"></div>
-        </a>
-      </div>
-
-      <!--Excerpt-->
-      <div class="card-body mt-1">
-        <a href="" class="brown-text">
-          <h5>
-            <i class="fa fa-camera"></i> Travel</h5>
-        </a>
-        <h4>This is title of the news</h4>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-        <a class="btn btn-success btn-rounded waves-light" mdbRippleRadius> View more</a>
-      </div>
-
+  <div class="container margin-top-30">
+    <div *ngIf="!courseName">
+      <h4 class="app-color text-center">Course not found</h4>
     </div>
-    <!--Grid column-->
-
-    <!--Grid column-->
-    <div class="col-lg-6 col-xl-5 mb-3">
-
-      <!--Featured image-->
-      <div class="view overlay hm-white-slight z-depth-2 waves-light" mdbRippleRadius>
-
-        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (56).jpg" alt="Sample project image">
-
-        <a>
-          <div class="mask"></div>
-        </a>
+    <div *ngIf="courseName" class="row">
+      <div class="col-md-8">
+        <h4 class="app-color">{{selectedCourse.name}} </h4>
+        <div class="course-duration">
+          <div class="row">
+            <div class="col-4 right-border">
+              <b>
+                <i class="fa fa-clock-o"> </i>Duration : </b>{{selectedCourse.durationDetails.time}}</div>
+            <div class="col-4 right-border">
+              <b>
+                <i class="fa fa-desktop"></i>Lab Sessions : </b>{{selectedCourse.durationDetails.labSession}}</div>
+            <div class="col-4">
+              <b>
+                <i class="fa fa-smile-o"></i> Learners : </b>{{selectedCourse.durationDetails.learners}}</div>
+          </div>
+        </div>
+        <div class="course-desc">
+          {{selectedCourse.description}}
+        </div>
       </div>
-
-      <!--Excerpt-->
-      <div class="card-body mt-1">
-        <a href="" class="cyan-text">
-          <h5>
-            <i class="fa fa-phone"></i> Technology</h5>
-        </a>
-        <h4>This is title of the news</h4>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid.
-        </p>
-        <a class="btn btn-success btn-rounded waves-light" mdbRippleRadius> View more</a>
+      <div class="col-md-4 batch-time-info">
+        <div class="row">
+          <div class="batch-text col-8">
+            <div>Select your Batch</div>
+            <div class="under-line"></div>
+          </div>
+        </div>
       </div>
-
     </div>
-    <!--Grid column-->
+    <div class="row table-sec">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <!--Table-->
+            <table class="table table-hover table-responsive-md table-striped table-fixed table-sm">
+              <!--Table head-->
+              <thead>
+                <tr class="th-header">
+                  <th>Track</th>
+                  <th>Course Duration</th>
+                  <th>Hours</th>
+                  <th>Training Mode</th>
+                </tr>
+              </thead>
+              <!--Table head-->
+              <!--Table body-->
+              <tbody>
+                <tr *ngFor="let track of selectedCourse.trackData">
+                  <td>{{track.type}}</td>
+                  <td>{{track.duration}}</td>
+                  <td>{{track.hours}}</td>
+                  <td>{{track.triningMode}}</td>
+                </tr>
+              </tbody>
+              <!--Table body-->
+            </table>
+            <!--Table-->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
 
+      </div>
+    </div>
   </div>
-  <!--Grid row-->
-
-</section>
-<!--/Projects section v.2-->
+</div>

@@ -1,0 +1,59 @@
+$app-color:#ec3f79;
+$white-color:#fff;
+.page-title-bg-sec {
+    background-image: url(assets/images/course.jpg);
+    width: 100%;
+    background-size: 100%;
+    .bg-text {
+        background-color: rgba(0, 0, 0, 0.49) !important;
+        width: 100%;
+        height: 261px;
+        h3 {
+            margin: auto;
+            text-align: center;
+            padding-top: 10%;
+            color: #fff;
+        }
+    }
+}
+
+.course-duration {
+    background: #f3f3f3;
+    padding: 7px;
+    margin: 15px 0;
+    .right-border {
+        .fa {
+            margin-right: 5px;
+        }
+        border-right: 1px solid #868080;
+    }
+}
+
+.course-desc {
+    text-indent: 50px;
+}
+
+.batch-time-info {
+    padding: 10px;
+    background: #f3f3f3;
+    min-height: 200px;
+    .batch-text {
+        .under-line {
+            border: 1px solid #ec3f79;
+            width: 25%;
+            margin-top: 7px;
+        }
+    }
+}
+
+.table-sec {
+    margin-top: 10px;
+    .table-fixed {
+        table-layout: fixed;
+        overflow: hidden;
+    }
+    .th-header {
+        background: $app-color;
+        color: $white-color;
+    }
+}
