@@ -11,7 +11,7 @@ import * as _ from 'lodash';
 })
 export class CourseDetailsComponent implements OnInit {
   course: any;
-  private courseName: string;
+  courseName: string;
   selectedCourse: any;
   constructor(private route: ActivatedRoute) { }
 
