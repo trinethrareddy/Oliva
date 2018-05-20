@@ -72,5 +72,40 @@
 
       </div>
     </div>
+    <!-- Vertical Steppers -->
+    <div class="row m-t-1" *ngIf="selectedCourse.courseContent">
+      <h4 class="app-color text-left syllabus-text">Syllabus</h4>
+      <div class="col-md-12 course-syllabus">
+
+        <!-- Stepers Wrapper -->
+        <ul class="stepper course-content-stepper">
+
+          <!-- Second Step -->
+          <li class="active" *ngFor="let content of selectedCourse.courseContent;  let i = index">
+
+            <!--Section Title -->
+            <a href="#">
+              <span class="circle">{{i + 1}}</span>
+              <span class="label">{{content.contentHeader}}</span>
+            </a>
+            <!-- Section Description -->
+            <div class="step-content">
+              <p *ngIf="!content.topics || content.topics.length ===0">No Content found</p>
+              <ul *ngIf="content.topics.length" class="topics-ul">
+                <li *ngFor="let topic of content.topics" [ngClass]="{'topic-header': topic.linKType === 'subHeader'}">
+                  {{topic.linkName}}
+                </li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+        <!-- /.Stepers Wrapper -->
+
+      </div>
+    </div>
+
+
+
   </div>
 </div>
