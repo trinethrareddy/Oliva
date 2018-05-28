@@ -5,6 +5,9 @@ $app-color:#ec3f79;
     .title {
         color: $app-color;
     }
+    ul {
+        list-style-type: circle;
+    }
 }
 
 .fa-icons {
