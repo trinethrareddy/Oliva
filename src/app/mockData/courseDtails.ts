@@ -2,7 +2,7 @@ export const COURSES = [
   {
     name: 'Salesforce Lightning Training',
     durationDetails: {
-      time: '30Hrs',
+      time: '40-45Hrs',
       labSession: 20,
       learners: 100
     },
@@ -854,13 +854,13 @@ export const COURSES = [
     ],
     trackData: [{
       type: 'Regular Track',
-      duration: '30 Hrs',
-      hours: '1hr/day',
+      duration: '40-45 Hrs',
+      hours: '1:30hr/day',
       triningMode: 'Online Classroom'
     }, {
       type: '	Weekend Track',
-      duration: '8 Weekends',
-      hours: '2 Hours a day',
+      duration: '5 Weekends',
+      hours: '4 Hours a day',
       triningMode: 'Online Classroom'
     }, {
       type: 'Fast Track',

@@ -11,7 +11,7 @@ $app-color:#ec3f79;
 }
 
 .course-title {
-    margin-bottom: 20%;
+    // margin-bottom: 20%;
 }
 
 .course-desc {
@@ -38,4 +38,6 @@ $app-color:#ec3f79;
 .course-bg {
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    max-height: 300px;
+    min-height: 300px;
 }
