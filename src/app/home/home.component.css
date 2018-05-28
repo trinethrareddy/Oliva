@@ -6,3 +6,8 @@
     font-weight: 600;
     margin-bottom: 47px;
 }
+.view {
+    background: url("../../assets/images/home_bg.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}

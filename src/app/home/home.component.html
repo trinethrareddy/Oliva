@@ -1,17 +1,36 @@
-<!--Carousel Wrapper-->
-<mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
-  <!--First slide-->
+<div class="view">
+  <div class="full-bg-img">
+      <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text">
+              <div class="white-text text-center wow fadeInUp">
+                <div class="animated fadeInDown">
+                  <h3 class="h3-responsive ">UPSKILL YOUR CAREER: LEARN FROM PROVEN
+                    <br/> INDUSTRY EXPERTS.
+                  </h3>
+                  <p>OVER 10+ COURSES IN BUSINESS, TECHNOLOGY, CREATIVE SKILLS - LEARN WITH EASE</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Course lists component here -->
+<app-course-list></app-course-list>
+<!-- Features component here -->
+<app-features></app-features>
+<!-- demo request  -->
+<app-demo-request></app-demo-request>
+
+
+<!-- <mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
   <mdb-slide>
-    <!--Mask color-->
     <div class="view hm-indigo-light">
-      <!--Video source-->
       <video class="video-fluid" autoplay loop>
         <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
       </video>
       <div class="mask waves-light" mdbRippleRadius></div>
     </div>
 
-    <!--Caption-->
     <div class="carousel-caption">
       <div class="animated fadeInDown">
         <h3 class="h3-responsive ">UPSKILL YOUR CAREER: LEARN FROM PROVEN
@@ -20,11 +39,9 @@
         <p>OVER 10+ COURSES IN BUSINESS, TECHNOLOGY, CREATIVE SKILLS - LEARN WITH EASE</p>
       </div>
     </div>
-    <!--Caption-->
   </mdb-slide>
-  <!--/First slide-->
-  <!--Second slide-->
-  <!-- <mdb-slide>
+  
+  <mdb-slide>
     <div class="view hm-purple-slight">
       <video class="video-fluid" autoplay loop>
         <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
@@ -37,15 +54,6 @@
         <h3 class="h3-responsive"> ENGAGE CUSTOMERS WITH SALESFORCE IOT TRAINING </h3>
       </div>
     </div>
-  </mdb-slide> -->
-  <!--/Second slide-->
+  </mdb-slide> 
 
-</mdb-carousel>
-<!--Carousel Wrapper-->
-
-<!-- Course lists component here -->
-<app-course-list></app-course-list>
-<!-- Features component here -->
-<app-features></app-features>
-<!-- demo request  -->
-<app-demo-request></app-demo-request>
+</mdb-carousel> -->
