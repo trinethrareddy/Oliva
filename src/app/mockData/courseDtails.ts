@@ -1,6 +1,6 @@
 export const COURSES = [
   {
-    name: 'Salesforce Lightning Training',
+    name: 'Salesforce Lightning (Dev-601) training',
     durationDetails: {
       time: '40-45Hrs',
       labSession: 20,
