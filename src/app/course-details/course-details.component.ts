@@ -13,24 +13,22 @@ export class CourseDetailsComponent implements OnInit {
   course: any;
   courseName: string;
   selectedCourse: any;
-  constructor(private route: ActivatedRoute) { }
-
-  ngOnInit() {
-    console.log('COURSES::', COURSES);
+  constructor(private route: ActivatedRoute) {
     this.course = this.route.paramMap.subscribe((params: ParamMap) => {
       this.courseName = params.get('name');
       if (this.courseName) {
-        console.log(this.courseName);
+        const matchedCourse = _.filter(COURSES, (course) => {
+          return course.name === this.courseName;
+        });
+        if (matchedCourse.length) {
+          this.selectedCourse = matchedCourse[0];
+        }
       }
     });
-    if (this.courseName) {
-      const matchedCourse = _.filter(COURSES, (course) => {
-        return course.name === this.courseName;
-      });
-      if (matchedCourse.length) {
-        this.selectedCourse = matchedCourse[0];
-      }
-    }
+  }
+  ngOnInit() {
+
+
 
   }
 
