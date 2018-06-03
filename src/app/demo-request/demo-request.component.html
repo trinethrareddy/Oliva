@@ -12,20 +12,23 @@
             <b>EMAIL</b> oliva.trininigs@gmail.com</h5>
         </div>
         <div class="col-md-6 right-sec">
-          <form>
+
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type=hidden name="oid" value="00D7F000005lHkD">
+            <input type=hidden name="retURL" value="http://thinuu.herokuapp.com/#/home/">
             <div class="row">
               <div class="col">
                 <div class="md-form">
                   <i class="fa fa-user prefix white-text"></i>
-                  <input type="text" id="form3" class="form-control" mdbActive>
-                  <label for="form3">Your name</label>
+                  <input type="text" id="first_name" class="form-control" mdbActive>
+                  <label for="first_name">Your name</label>
                 </div>
               </div>
               <div class="col">
                 <div class="md-form">
                   <i class="fa fa-envelope prefix white-text"></i>
-                  <input type="text" id="form2" class="form-control" mdbActive>
-                  <label for="form2">Your email</label>
+                  <input type="text" id="email" class="form-control" mdbActive>
+                  <label for="email">Your email</label>
                 </div>
               </div>
             </div>
@@ -33,8 +36,8 @@
               <div class="col-12">
                 <div class="md-form">
                   <i class="fa fa-phone prefix white-text"></i>
-                  <input type="text" id="form2" class="form-control" mdbActive>
-                  <label for="form2">Your Mobile</label>
+                  <input type="text" id="mobile_number" class="form-control" mdbActive>
+                  <label for="mobile_number">Your Mobile</label>
                 </div>
               </div>
             </div>
@@ -42,13 +45,13 @@
               <div class="col-12">
                 <div class="md-form">
                   <i class="fa fa-pencil prefix white-text"></i>
-                  <input type="text" id="form2" class="form-control" mdbActive>
-                  <label for="form2">Your Message</label>
+                  <input type="text" id="message" class="form-control" mdbActive>
+                  <label for="message">Your Message</label>
                 </div>
               </div>
             </div>
             <div class="row btn-sec">
-              <button class="btn submit-btn btn-rounded waves-light" mdbRippleRadius>Submit</button>
+              <button type="submit" class="btn submit-btn btn-rounded waves-light" mdbRippleRadius>Submit</button>
             </div>
           </form>
         </div>

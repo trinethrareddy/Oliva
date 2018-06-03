@@ -21,7 +21,10 @@
 
                   <br>
 
-                  <form>
+                  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                    <input type=hidden name="oid" value="00D7F000005lHkD">
+                    <input type=hidden name="retURL" value="http://thinuu.herokuapp.com/#/home/">
                     <!--Grid row-->
                     <div class="row">
 
@@ -29,8 +32,8 @@
                       <div class="col-md-6">
                         <div class="md-form">
                           <div class="md-form">
-                            <input mdbActive type="text" id="form-contact-name" class="form-control">
-                            <label for="form-contact-name" class="">Your name</label>
+                            <input mdbActive type="text" id="full_name" class="form-control">
+                            <label for="full_name" class="">Your name</label>
                           </div>
                         </div>
                       </div>
@@ -40,8 +43,8 @@
                       <div class="col-md-6">
                         <div class="md-form">
                           <div class="md-form">
-                            <input mdbActive type="text" id="form-contact-email" class="form-control">
-                            <label for="form-contact-email" class="">Your email</label>
+                            <input mdbActive type="text" id="email" class="form-control">
+                            <label for="email" class="">Your email</label>
                           </div>
                         </div>
                       </div>
@@ -57,8 +60,8 @@
                       <div class="col-md-6">
                         <div class="md-form">
                           <div class="md-form">
-                            <input mdbActive type="text" id="form-contact-phone" class="form-control">
-                            <label for="form-contact-phone" class="">Your phone</label>
+                            <input mdbActive type="text" id="mobile_number" class="form-control">
+                            <label for="mobile_number" class="">Your phone</label>
                           </div>
                         </div>
                       </div>
@@ -68,8 +71,8 @@
                       <div class="col-md-6">
                         <div class="md-form">
                           <div class="md-form">
-                            <input mdbActive type="text" id="form-contact-company" class="form-control">
-                            <label for="form-contact-company" class="">Your company</label>
+                            <input mdbActive type="text" id="company" class="form-control">
+                            <label for="company" class="">Your company</label>
                           </div>
                         </div>
                       </div>
@@ -85,13 +88,13 @@
                       <div class="col-md-12">
 
                         <div class="md-form">
-                          <textarea mdbActive type="text" id="form-contact-message" class="md-textarea"></textarea>
-                          <label for="form-contact-message">Your message</label>
-                          <a class="btn-floating btn-lg blue waves-light" mdbRippleRadius>
-                            <i class="fa fa-send-o"></i>
-                          </a>
-                        </div>
+                          <textarea mdbActive type="text" id="message" class="md-textarea"></textarea>
+                          <label for="message">Your message</label>
 
+                        </div>
+                        <button type="submit" class="btn-floating btn-lg blue waves-light" mdbRippleRadius>
+                          <i class="fa fa-send-o"></i>
+                        </button>
                       </div>
                       <!--Grid column-->
 
